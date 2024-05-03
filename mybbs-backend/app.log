@@ -1,0 +1,104 @@
+2024-05-03 14:41:29.356	INFO	config/logger.go:34	logger init success
+2024-05-03 14:41:29.365	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 14:41:29.389	ERROR	config/mysql.go:72	failed to connect database ,err:Error 1049 (42000): Unknown database 'mybbs'
+2024-05-03 14:42:13.919	INFO	config/logger.go:34	logger init success
+2024-05-03 14:42:13.927	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 14:42:13.943	ERROR	config/mysql.go:86	failed to migrate database models, err:Error 1075 (42000): Incorrect table definition; there can be only one auto column and it must be defined as a key
+2024-05-03 14:42:31.732	INFO	config/logger.go:34	logger init success
+2024-05-03 14:42:31.740	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 14:42:31.756	ERROR	config/mysql.go:86	failed to migrate database models, err:Error 1075 (42000): Incorrect table definition; there can be only one auto column and it must be defined as a key
+2024-05-03 14:46:14.767	INFO	config/logger.go:34	logger init success
+2024-05-03 14:46:14.775	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 14:46:14.790	ERROR	config/mysql.go:86	failed to migrate database models, err:Error 1075 (42000): Incorrect table definition; there can be only one auto column and it must be defined as a key
+2024-05-03 14:47:42.040	INFO	config/logger.go:34	logger init success
+2024-05-03 14:47:42.049	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 14:47:42.063	ERROR	config/mysql.go:86	failed to migrate database models, err:Error 1824 (HY000): Failed to open the referenced table 't_post'
+2024-05-03 14:49:56.936	INFO	config/logger.go:34	logger init success
+2024-05-03 14:49:56.945	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 14:49:57.000	INFO	config/mysql.go:155	database init success
+2024-05-03 14:49:57.001	INFO	config/redis.go:30	redis init success
+2024-05-03 14:49:57.003	INFO	router/routers.go:42	init router success
+2024-05-03 18:31:18.161	INFO	config/zap.go:86	/user/register	{"status": 404, "method": "GET", "query": "", "ip": "::1", "latency": 0}
+2024-05-03 18:31:56.690	INFO	config/zap.go:86	/api/user/register	{"status": 404, "method": "GET", "query": "", "ip": "::1", "latency": 0}
+2024-05-03 18:32:01.196	INFO	config/zap.go:86	/api/register	{"status": 404, "method": "GET", "query": "", "ip": "::1", "latency": 0}
+2024-05-03 18:32:04.438	INFO	config/zap.go:86	/api/register	{"status": 404, "method": "GET", "query": "", "ip": "::1", "latency": 0}
+2024-05-03 18:33:25.142	INFO	config/zap.go:86	/api/user/login	{"status": 404, "method": "GET", "query": "", "ip": "::1", "latency": 0}
+2024-05-03 18:36:22.968	INFO	config/zap.go:86	/api/user/register	{"status": 404, "method": "GET", "query": "username=xb&password=123456&re_password=123456", "ip": "::1", "latency": 0}
+2024-05-03 18:36:40.808	INFO	config/logger.go:34	logger init success
+2024-05-03 18:36:40.816	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 18:36:40.839	ERROR	config/mysql.go:97	failed to create user 'admin', err:Error 1062 (23000): Duplicate entry 'admin' for key 't_user.username'
+2024-05-03 18:36:40.840	ERROR	config/mysql.go:106	failed to create user 'user', err:Error 1062 (23000): Duplicate entry 'user' for key 't_user.username'
+2024-05-03 18:36:40.845	INFO	config/mysql.go:155	database init success
+2024-05-03 18:36:40.847	INFO	config/redis.go:30	redis init success
+2024-05-03 18:36:40.848	INFO	router/routers.go:42	init router success
+2024-05-03 18:36:45.135	INFO	config/zap.go:86	/api/user/register	{"status": 404, "method": "GET", "query": "username=xb&password=123456&re_password=123456", "ip": "::1", "latency": 0}
+2024-05-03 18:37:35.766	ERROR	config/validator.go:86	errors	{"errors": {"password":"password为必填字段","re_password":"re_password为必填字段","username":"username为必填字段"}}
+2024-05-03 18:37:35.766	INFO	config/zap.go:86	/api/user/register	{"status": 400, "method": "POST", "query": "username=xb&password=123456&re_password=123456", "ip": "::1", "latency": 0.0003649}
+2024-05-03 18:38:20.952	ERROR	config/validator.go:86	errors	{"errors": {"username":"username长度必须至少为3个字符"}}
+2024-05-03 18:38:20.952	INFO	config/zap.go:86	/api/user/register	{"status": 400, "method": "POST", "query": "username=xb&password=123456&re_password=123456", "ip": "::1", "latency": 0.0008099}
+2024-05-03 18:38:29.197	ERROR	config/zap.go:165	[Recovery from panic]	{"error": "创建失败", "path": "/api/user/register", "method": "POST", "ip": "::1", "user-agent": "PostmanRuntime/7.37.3"}
+2024-05-03 19:07:23.356	ERROR	config/validator.go:76	invalid character '"' after object key:value pair
+2024-05-03 19:07:23.357	INFO	config/zap.go:86	/api/user/register	{"status": 400, "method": "POST", "query": "username=xb&password=123456&re_password=123456", "ip": "::1", "latency": 0.0011967}
+2024-05-03 19:07:32.085	ERROR	config/zap.go:165	[Recovery from panic]	{"error": "创建失败", "path": "/api/user/register", "method": "POST", "ip": "::1", "user-agent": "PostmanRuntime/7.37.3"}
+2024-05-03 19:07:41.125	ERROR	config/zap.go:165	[Recovery from panic]	{"error": "创建失败", "path": "/api/user/register", "method": "POST", "ip": "::1", "user-agent": "PostmanRuntime/7.37.3"}
+2024-05-03 19:08:52.059	INFO	config/logger.go:34	logger init success
+2024-05-03 19:08:52.067	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 19:08:52.109	ERROR	config/mysql.go:97	failed to create user 'admin', err:Error 1062 (23000): Duplicate entry 'admin' for key 't_user.username'
+2024-05-03 19:08:52.110	ERROR	config/mysql.go:106	failed to create user 'user', err:Error 1062 (23000): Duplicate entry 'user' for key 't_user.username'
+2024-05-03 19:08:52.112	INFO	config/mysql.go:155	database init success
+2024-05-03 19:08:52.113	INFO	config/redis.go:30	redis init success
+2024-05-03 19:08:52.114	INFO	router/routers.go:42	init router success
+2024-05-03 19:08:55.416	INFO	config/zap.go:86	/api/user/register	{"status": 200, "method": "POST", "query": "username=xb&password=123456&re_password=123456", "ip": "::1", "latency": 0.0081561}
+2024-05-03 19:11:38.132	ERROR	config/zap.go:165	[Recovery from panic]	{"error": {"code":1003,"msg":"用户已存在"}, "path": "/api/user/register", "method": "POST", "ip": "::1", "user-agent": "PostmanRuntime/7.37.3"}
+2024-05-03 19:12:13.409	INFO	config/zap.go:86	/api/user/login	{"status": 200, "method": "POST", "query": "", "ip": "::1", "latency": 0.0178833}
+2024-05-03 19:14:38.256	INFO	config/zap.go:86	/api/post/create	{"status": 404, "method": "POST", "query": "", "ip": "::1", "latency": 0}
+2024-05-03 19:15:59.759	ERROR	middleware/auth.go:43	解析token失败
+2024-05-03 19:15:59.760	INFO	config/zap.go:86	/api/post	{"status": 401, "method": "POST", "query": "", "ip": "::1", "latency": 0.0008703}
+2024-05-03 19:17:30.386	INFO	config/zap.go:86	/api/user/login	{"status": 200, "method": "POST", "query": "", "ip": "::1", "latency": 0.0070654}
+2024-05-03 19:17:52.605	INFO	config/zap.go:86	/api/post	{"status": 401, "method": "POST", "query": "access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNzcwMTM2MTg1MTkzMTQ0MzIsImlzcyI6Im5vdm8iLCJleHAiOjE3MTQ3NDIyNTAsIm5iZiI6MTcxNDczNTA1MCwiaWF0IjoxNzE0NzM1MDUwfQ.9xf4PsYe5wdCRwzDZArC6VwM0gh5O0G0JZfHumHpx9k&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNzcwMTM2MTg1MTkzMTQ0MzIsImlzcyI6Im5vdm8iLCJleHAiOjE3MTQ3NjAyNTAsIm5iZiI6MTcxNDczNTA1MCwiaWF0IjoxNzE0NzM1MDUwfQ.TW-uZkFK51ORrZY16YNAiR3FeE-GzmXqed7ORvb0H1I", "ip": "::1", "latency": 0}
+2024-05-03 19:19:23.953	INFO	config/zap.go:86	/api/post	{"status": 401, "method": "POST", "query": "access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNzcwMTM2MTg1MTkzMTQ0MzIsImlzcyI6Im5vdm8iLCJleHAiOjE3MTQ3NDIyNTAsIm5iZiI6MTcxNDczNTA1MCwiaWF0IjoxNzE0NzM1MDUwfQ.9xf4PsYe5wdCRwzDZArC6VwM0gh5O0G0JZfHumHpx9k&refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNzcwMTM2MTg1MTkzMTQ0MzIsImlzcyI6Im5vdm8iLCJleHAiOjE3MTQ3NjAyNTAsIm5iZiI6MTcxNDczNTA1MCwiaWF0IjoxNzE0NzM1MDUwfQ.TW-uZkFK51ORrZY16YNAiR3FeE-GzmXqed7ORvb0H1I", "ip": "::1", "latency": 0}
+2024-05-03 19:25:51.431	INFO	config/logger.go:34	logger init success
+2024-05-03 19:25:51.439	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 19:25:51.460	ERROR	config/mysql.go:97	failed to create user 'admin', err:Error 1062 (23000): Duplicate entry 'admin' for key 't_user.username'
+2024-05-03 19:25:51.461	ERROR	config/mysql.go:106	failed to create user 'user', err:Error 1062 (23000): Duplicate entry 'user' for key 't_user.username'
+2024-05-03 19:25:51.463	INFO	config/mysql.go:155	database init success
+2024-05-03 19:25:51.464	INFO	config/redis.go:30	redis init success
+2024-05-03 19:25:51.465	INFO	router/routers.go:42	init router success
+2024-05-03 19:25:57.413	INFO	config/zap.go:86	/api/user/login	{"status": 200, "method": "POST", "query": "", "ip": "::1", "latency": 0.0011657}
+2024-05-03 19:26:20.756	ERROR	middleware/auth.go:43	解析token失败
+2024-05-03 19:26:20.757	INFO	config/zap.go:86	/api/post	{"status": 401, "method": "POST", "query": "", "ip": "::1", "latency": 0.0011317}
+2024-05-03 19:27:49.128	ERROR	middleware/auth.go:43	解析token失败
+2024-05-03 19:27:49.129	INFO	config/zap.go:86	/api/post	{"status": 401, "method": "POST", "query": "", "ip": "::1", "latency": 0.0014286}
+2024-05-03 19:28:20.370	ERROR	config/zap.go:165	[Recovery from panic]	{"error": "open template/index.html: The system cannot find the path specified.", "path": "/", "method": "GET", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0"}
+2024-05-03 19:28:22.009	ERROR	config/zap.go:165	[Recovery from panic]	{"error": "open template/index.html: The system cannot find the path specified.", "path": "/", "method": "GET", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0"}
+2024-05-03 19:28:23.101	ERROR	config/zap.go:165	[Recovery from panic]	{"error": "open template/index.html: The system cannot find the path specified.", "path": "/", "method": "GET", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0"}
+2024-05-03 19:28:23.327	ERROR	config/zap.go:165	[Recovery from panic]	{"error": "open template/index.html: The system cannot find the path specified.", "path": "/", "method": "GET", "ip": "127.0.0.1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0"}
+2024-05-03 19:32:01.040	INFO	config/logger.go:34	logger init success
+2024-05-03 19:32:01.048	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 19:32:01.068	ERROR	config/mysql.go:97	failed to create user 'admin', err:Error 1062 (23000): Duplicate entry 'admin' for key 't_user.username'
+2024-05-03 19:32:01.069	ERROR	config/mysql.go:106	failed to create user 'user', err:Error 1062 (23000): Duplicate entry 'user' for key 't_user.username'
+2024-05-03 19:32:01.076	INFO	config/mysql.go:155	database init success
+2024-05-03 19:32:01.077	INFO	config/redis.go:30	redis init success
+2024-05-03 19:32:01.078	INFO	router/routers.go:42	init router success
+2024-05-03 19:32:16.284	INFO	config/zap.go:86	/api/user/login	{"status": 200, "method": "POST", "query": "", "ip": "::1", "latency": 0.0010581}
+2024-05-03 19:33:31.021	ERROR	middleware/auth.go:43	解析token失败
+2024-05-03 19:33:31.022	INFO	config/zap.go:86	/api/post	{"status": 401, "method": "POST", "query": "Authorization=%0ABearer%20%0AeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxNzcwMTM2MTg1MTkzMTQ0MzIsImlzcyI6Im5vdm8iLCJleHAiOjE3MTQ3NDMxMzYsIm5iZiI6MTcxNDczNTkzNiwiaWF0IjoxNzE0NzM1OTM2fQ.EhlZXZYg_Bh6LIWGcwN2gob6rCqxONw8y5I9daeiovY", "ip": "::1", "latency": 0.0003606}
+2024-05-03 19:34:11.385	ERROR	middleware/auth.go:43	解析token失败
+2024-05-03 19:34:11.385	INFO	config/zap.go:86	/api/post	{"status": 401, "method": "POST", "query": "", "ip": "::1", "latency": 0.000396}
+2024-05-03 19:36:07.107	ERROR	middleware/auth.go:43	解析token失败
+2024-05-03 19:36:07.109	INFO	config/zap.go:86	/api/post	{"status": 401, "method": "POST", "query": "", "ip": "::1", "latency": 0.000944}
+2024-05-03 19:41:47.428	INFO	config/logger.go:34	logger init success
+2024-05-03 19:41:47.436	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 19:41:47.455	ERROR	config/mysql.go:97	failed to create user 'admin', err:Error 1062 (23000): Duplicate entry 'admin' for key 't_user.username'
+2024-05-03 19:41:47.456	ERROR	config/mysql.go:106	failed to create user 'user', err:Error 1062 (23000): Duplicate entry 'user' for key 't_user.username'
+2024-05-03 19:41:47.464	INFO	config/mysql.go:155	database init success
+2024-05-03 19:41:47.464	INFO	config/redis.go:30	redis init success
+2024-05-03 19:41:47.465	INFO	router/routers.go:42	init router success
+2024-05-03 19:42:10.375	ERROR	api/post.go:50	failed to get top post list	{"error": "User: unsupported relations for schema Post"}
+2024-05-03 19:42:10.375	INFO	config/zap.go:86	/api/post	{"status": 200, "method": "GET", "query": "", "ip": "::1", "latency": 0.0010894}
+2024-05-03 19:43:35.386	INFO	config/logger.go:34	logger init success
+2024-05-03 19:43:35.395	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 19:43:35.411	ERROR	config/mysql.go:86	failed to migrate database models, err:Error 1822 (HY000): Failed to add the foreign key constraint. Missing index for constraint 'fk_t_post_user' in the referenced table 't_post'
+2024-05-03 19:44:07.353	INFO	config/logger.go:34	logger init success
+2024-05-03 19:44:07.362	INFO	snowflake/snowflake.go:26	snowflake node init success
+2024-05-03 19:44:07.379	ERROR	config/mysql.go:86	failed to migrate database models, err:Error 3780 (HY000): Referencing column 'user_id' and referenced column 'id' in foreign key constraint 'fk_t_post_user' are incompatible.
